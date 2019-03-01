@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mna.demo</groupId>
-	<artifactId>kafka-streams-spring-boot-json-example</artifactId>
+	<groupId>com.js.ecs</groupId>
+	<artifactId>kafka-streams-dedup</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>kafka-streams-spring-boot-json-example</name>
+	<name>kafka-streams-deduo</name>
 	<description>This is a Spring Boot example of how to read in JSON from a Kakfa topic and, via Kafka Streams, create a single json doc from subsequent JSON documents</description>
 
 	<parent>
@@ -56,14 +56,13 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
+	<plugins>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		</plugin>
+	</plugins>
+    </build>
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>
